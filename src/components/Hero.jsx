@@ -256,7 +256,7 @@ export default function Hero() {
           className="hero-anim-4"
           style={{
             position: 'relative',
-            maxWidth: '1080px',
+            maxWidth: '1240px',
             margin: '0 auto',
             width: '100%',
             paddingBottom: '80px',

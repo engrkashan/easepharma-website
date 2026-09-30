@@ -54,35 +54,35 @@ export default function Compliance() {
         <div style={{ display: 'grid', gap: 24, gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', alignItems: 'start' }}>
           {/* Thermal receipt */}
           <div className={`fade-rise ${inView ? 'in' : ''}`} style={{ display: 'flex', justifyContent: 'center' }}>
-            <div style={{ width: 220 }}>
+            <div style={{ width: 280, maxWidth: '100%' }}>
               <div
                 className="receipt-edge"
-                style={{ background: '#fff', padding: '18px 20px 32px', fontFamily: 'monospace', fontSize: '10.5px', lineHeight: 1.65, color: '#7a6886', boxShadow: '0 24px 60px -24px rgba(26,1,44,.30)' }}
+                style={{ background: '#fff', padding: '22px 22px 36px', fontFamily: 'monospace', fontSize: '11.5px', lineHeight: 1.65, color: '#7a6886', boxShadow: '0 28px 70px -20px rgba(26,1,44,.28)' }}
               >
-                <div style={{ textAlign: 'center', fontWeight: 800, fontSize: '12px', color: '#1A012C', fontFamily: 'Manrope, sans-serif' }}>Ease Pharma</div>
-                <div style={{ textAlign: 'center', fontSize: '10px' }}>Shop 14, F-7 Markaz, Islamabad</div>
-                <div style={{ textAlign: 'center', fontSize: '10px' }}>DSL 04-213-0917 (Form 9 — Retail)</div>
-                <div style={{ textAlign: 'center', fontSize: '10px' }}>Pharmacist: Hamid Raza · PMDC 12847</div>
-                <div style={{ borderTop: '1px dashed #e8e3ef', margin: '8px 0' }} />
-                <div style={{ fontSize: '9.5px', color: '#b8afc2', marginBottom: 4 }}>Invoice: EP-2026-00417 · 28 Sep 2026</div>
+                <div style={{ textAlign: 'center', fontWeight: 800, fontSize: '14px', color: '#1A012C', fontFamily: 'Manrope, sans-serif' }}>Ease Pharma</div>
+                <div style={{ textAlign: 'center', fontSize: '11px' }}>Shop 14, F-7 Markaz, Islamabad</div>
+                <div style={{ textAlign: 'center', fontSize: '11px' }}>DSL 04-213-0917 (Form 9 — Retail)</div>
+                <div style={{ textAlign: 'center', fontSize: '11px' }}>Pharmacist: Hamid Raza · PMDC 12847</div>
+                <div style={{ borderTop: '1px dashed #e8e3ef', margin: '10px 0' }} />
+                <div style={{ fontSize: '10.5px', color: '#b8afc2', marginBottom: 4 }}>Invoice: EP-2026-00417 · 28 Sep 2026</div>
                 {receiptLines.map(l => (
                   <div key={l.label} style={{ display: 'flex', justifyContent: 'space-between' }}>
                     <span style={{ flex: 1, paddingRight: 4 }}>{l.label}</span>
                     <span className="tabnum">{l.value}</span>
                   </div>
                 ))}
-                <div style={{ fontSize: '9.5px', color: '#b8afc2' }}>Batch: AG-2417 · Exp Mar 2027</div>
-                <div style={{ borderTop: '1px dashed #e8e3ef', margin: '8px 0' }} />
-                <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 800, color: '#1A012C' }}>
+                <div style={{ fontSize: '10.5px', color: '#b8afc2', marginTop: 2 }}>Batch: AG-2417 · Exp Mar 2027</div>
+                <div style={{ borderTop: '1px dashed #e8e3ef', margin: '10px 0' }} />
+                <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 800, color: '#1A012C', fontSize: '13px' }}>
                   <span>Total</span>
                   <span className="tabnum">Rs 1,044</span>
                 </div>
-                <div style={{ borderTop: '1px dashed #e8e3ef', margin: '8px 0' }} />
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginTop: 6 }}>
-                  <Qr size={48} seed={73} />
+                <div style={{ borderTop: '1px dashed #e8e3ef', margin: '10px 0' }} />
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginTop: 8 }}>
+                  <Qr size={54} seed={73} />
                   <div>
-                    <div style={{ fontWeight: 800, fontSize: '11px', color: '#1A012C', fontFamily: 'Manrope, sans-serif' }}>FBR Invoice</div>
-                    <div style={{ fontSize: '9.5px' }}>USIN verified · Tier-1</div>
+                    <div style={{ fontWeight: 800, fontSize: '12px', color: '#1A012C', fontFamily: 'Manrope, sans-serif' }}>FBR Invoice</div>
+                    <div style={{ fontSize: '10.5px' }}>USIN verified · Tier-1</div>
                   </div>
                 </div>
               </div>

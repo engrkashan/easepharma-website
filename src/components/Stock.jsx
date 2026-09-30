@@ -18,7 +18,7 @@ export default function Stock() {
   return (
     <section id="stock" className="section section-white" ref={ref}>
       <div className="wrap">
-        <div className="grid gap-14 lg:grid-cols-[1.1fr_1fr] lg:items-center">
+        <div className="grid gap-12 lg:grid-cols-[1.25fr_1.02fr] lg:items-center">
           {/* Screenshot / mock */}
           <div className={`fade-rise ${inView ? 'in' : ''}`}>
             {/* <div className="screen-frame-light" style={{ overflow: 'hidden' }}>
@@ -78,7 +78,9 @@ export default function Stock() {
                 </div>
               </div>
             </div> */}
-            <img src="/screenshots/expiry-dashboard.png" alt="Expiry risk dashboard" style={{ width: '100%', display: 'block' }} className='rounded-xl' />
+            <div className="rounded-2xl overflow-hidden shadow-2xl border border-[rgba(26,1,44,0.08)] bg-white">
+              <img src="/screenshots/expiry-dashboard.png" alt="Expiry risk dashboard" style={{ width: '100%', display: 'block' }} />
+            </div>
 
           </div>
 

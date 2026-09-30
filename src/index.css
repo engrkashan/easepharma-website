@@ -69,6 +69,7 @@
 ───────────────────────────────────────── */
 .wrap { width: 100%; max-width: 1200px; margin-left: auto; margin-right: auto; padding-left: 20px; padding-right: 20px; }
 @media (min-width:640px) { .wrap { padding-left: 32px; padding-right: 32px; } }
+@media (min-width:1280px) { .wrap { max-width: 1320px; padding-left: 40px; padding-right: 40px; } }
 
 .section     { padding-top: 96px; padding-bottom: 96px; }
 @media (min-width:640px) { .section { padding-top: 128px; padding-bottom: 128px; } }

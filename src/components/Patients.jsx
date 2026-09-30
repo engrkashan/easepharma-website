@@ -15,10 +15,10 @@ export default function Patients() {
   return (
     <section id="patients" className="section section-ice" ref={ref}>
       <div className="wrap">
-        <div className="grid gap-14 lg:grid-cols-2 lg:items-center">
+        <div className="grid gap-12 lg:grid-cols-[1.25fr_0.9fr] lg:items-center">
           {/* Patient card mockup */}
           <div className={`fade-rise ${inView ? 'in' : ''}`}>
-            <div className="screen-frame-light" style={{ overflow: 'hidden' }}>
+            <div className="screen-frame-light shadow-2xl" style={{ overflow: 'hidden' }}>
               <div className="browser-chrome-light">
                 <span className="chrome-dot" style={{ background: '#ff5f57' }} />
                 <span className="chrome-dot" style={{ background: '#febc2e' }} />

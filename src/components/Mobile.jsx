@@ -12,7 +12,7 @@ export default function Mobile() {
   return (
     <section id="mobile" className="section section-white" ref={ref}>
       <div className="wrap">
-        <div className="grid gap-14 lg:grid-cols-2 lg:items-center">
+        <div className="grid gap-12 lg:grid-cols-[1.25fr_0.9fr] lg:items-center">
           {/* Phone mockup */}
           <div className={`fade-rise flex justify-center lg:justify-start ${inView ? 'in' : ''}`}>
             {/* <div
@@ -60,7 +60,9 @@ export default function Mobile() {
                 ))}
               </div>
             </div> */}
-            <img src="/screenshots/mobile-app.png" alt="Mobile" style={{ width: '100%', display: 'block' }} className='rounded-2xl' />
+            <div className="rounded-2xl overflow-hidden shadow-2xl border border-[rgba(26,1,44,0.08)] bg-white w-full max-w-[560px]">
+              <img src="/screenshots/mobile-app.png" alt="Mobile" style={{ width: '100%', display: 'block' }} />
+            </div>
           </div>
 
           {/* Text */}

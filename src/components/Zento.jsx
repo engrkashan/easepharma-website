@@ -47,7 +47,7 @@ export default function Zento() {
       </div>
 
       <div className="wrap" style={{ position: 'relative', zIndex: 1 }}>
-        <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-center">
+        <div className="grid gap-12 lg:grid-cols-[0.82fr_1.45fr] lg:items-center">
           {/* Text */}
           <div className={`fade-rise ${inView ? 'in' : ''}`}>
             <p style={{ display: 'inline-flex', alignItems: 'center', gap: 8, borderRadius: 999, padding: '6px 16px', background: 'rgba(255,255,255,.08)', border: '1px solid rgba(255,255,255,.12)', fontSize: '13px', fontWeight: 700, color: 'rgba(255,255,255,.7)', marginBottom: 24 }}>
@@ -139,7 +139,9 @@ export default function Zento() {
                 </div>
               </div>
             </div> */}
-            <img src="/screenshots/zento-ai.png" alt="Zento AI" style={{ width: '100%', display: 'block' }} className='rounded-2xl' />
+            <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-[#1A012C]">
+              <img src="/screenshots/zento-ai.png" alt="Zento AI" style={{ width: '100%', display: 'block' }} />
+            </div>
           </div>
         </div>
       </div>

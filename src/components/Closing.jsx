@@ -6,12 +6,12 @@ export default function Closing() {
   return (
     <>
       {/* Final CTA */}
-      <section id="demo" style={{ paddingBottom: '96px', background: 'var(--color-aub)', position: 'relative', overflow: 'hidden' }}>
+      <section id="demo" className='py-[96px]' style={{ paddingY: '96px', background: 'var(--color-aub)', position: 'relative', overflow: 'hidden' }}>
         {/* Glow */}
         <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 850, height: 520, borderRadius: '50%', background: 'radial-gradient(ellipse, rgba(96,0,16,.55) 0%, rgba(26,1,44,.6) 50%, transparent 70%)', filter: 'blur(75px)', pointerEvents: 'none' }} aria-hidden="true" />
-        
+
         {/* Floating 3D Capsule in Closing section */}
-        <div className="hidden lg:block absolute -top-8 right-12 pointer-events-none z-10" aria-hidden="true">
+        <div className="hidden lg:block absolute top-2 right-12 pointer-events-none z-10" aria-hidden="true">
           <div className="animate-capsule-float-1">
             <Capsule3D size={56} tilt={32} />
           </div>
@@ -74,7 +74,7 @@ export default function Closing() {
         <div className="wrap">
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 32, alignItems: 'flex-start', justifyContent: 'space-between' }}>
             <div>
-              <Logo white height={24} />
+              <Logo white height={52} />
               <p style={{ marginTop: 10, fontSize: '13px', color: 'rgba(255,255,255,.35)', lineHeight: 1.6, maxWidth: '28ch' }}>
                 A product of EaseZen Solutions, Islamabad.
               </p>

@@ -28,7 +28,7 @@ export default function Insights() {
   return (
     <section id="insights" className="section section-white" ref={ref}>
       <div className="wrap">
-        <div className="grid gap-14 lg:grid-cols-2 lg:items-center">
+        <div className="grid gap-12 lg:grid-cols-[0.85fr_1.35fr] lg:items-center">
           {/* Text */}
           <div className={`fade-rise ${inView ? 'in' : ''}`}>
             <h2 className="h2" style={{ color: '#1A012C' }}>
@@ -55,7 +55,7 @@ export default function Insights() {
 
           {/* Charts mockup */}
           <div className={`fade-rise ${inView ? 'in' : ''}`} style={{ animationDelay: '100ms' }}>
-            <div className="screen-frame-light" style={{ overflow: 'hidden' }}>
+            <div className="screen-frame-light shadow-2xl" style={{ overflow: 'hidden' }}>
               <div className="browser-chrome-light">
                 <span className="chrome-dot" style={{ background: '#ff5f57' }} />
                 <span className="chrome-dot" style={{ background: '#febc2e' }} />

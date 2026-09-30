@@ -44,7 +44,7 @@ export default function App() {
         <Insights />
         <Migration />
         <Mobile />
-        <Pricing />
+        {/* <Pricing /> */}
         <Faq />
         <Closing />
       </main>
