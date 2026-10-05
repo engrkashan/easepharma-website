@@ -5,7 +5,7 @@ import { links } from '../content'
 const items = [
   ['Features', '#counter'],
   ['Compliance', '#compliance'],
-  ['Pricing', '#pricing'],
+  // ['Pricing', '#pricing'],
   ['FAQ', '#faq'],
 ]
 
