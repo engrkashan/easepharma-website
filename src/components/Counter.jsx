@@ -50,16 +50,19 @@ export default function Counter() {
             </ul>
           </div>
 
-          {/* GIF demo */}
+          {/* Video demo */}
           <div
             className={`fade-rise ${inView ? "in" : ""}`}
             style={{ animationDelay: "100ms" }}
           >
-            <div className="rounded-2xl overflow-hidden shadow-2xl border border-[rgba(26,1,44,0.08)] bg-white">
-              <img
-                src="/pos1.gif"
-                alt="Ease Pharma POS interface demo"
-                style={{ width: "100%", height: "auto", display: "block" }}
+            <div className="rounded-2xl border-4 border-white overflow-hidden shadow-2xl">
+              <video
+                src="/Keyboard-first billing.MOV"
+                autoPlay
+                muted
+                loop
+                playsInline
+                style={{ width: "100%", display: "block" }}
               />
             </div>
           </div>

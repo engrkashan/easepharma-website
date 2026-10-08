@@ -140,7 +140,7 @@ export default function Zento() {
               </div>
             </div> */}
             <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-[#1A012C]">
-              <img src="/screenshots/zento-ai.png" alt="Zento AI" style={{ width: '100%', display: 'block' }} />
+              <video src="/zento.MOV" autoPlay loop muted playsInline style={{ width: '100%', display: 'block' }} />
             </div>
           </div>
         </div>

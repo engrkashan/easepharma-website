@@ -322,19 +322,7 @@ export default function Hero() {
               </div>
             </div>
 
-            {/*
-              REAL SCREENSHOT SLOT:
-              Drop pos-main.png in /public/screenshots/ and replace the <PosMockup /> below with:
-              <img src="/screenshots/pos-main.png" alt="Ease Pharma POS" style={{ width:'100%', display:'block' }} />
-            */}
-            <div style={{ background: "#fff" }}>
-              {/* <PosMockup /> */}
-              <img
-                src="/screenshots/pos-main.png"
-                alt="Ease Pharma POS"
-                className="w-full"
-              />
-            </div>
+            <video src="/hero-pos.MOV" autoPlay loop muted className="w-full" />
           </div>
 
           {/* ─────────────────────────────────────────────────────────────

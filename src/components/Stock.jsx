@@ -1,26 +1,44 @@
-import useInView from '../hooks/useInView'
-
-/*
-  REAL SCREENSHOT SLOT
-  Drop /public/screenshots/expiry-dashboard.png and use:
-  <img src="/screenshots/expiry-dashboard.png" alt="Expiry risk dashboard" style={{ width:'100%', display:'block' }} />
-*/
+import useInView from "../hooks/useInView";
 
 const batches = [
-  { label: 'Expired', count: 3, value: 'Rs 8,420', width: '18%', color: '#DC2626' },
-  { label: 'Under 30 days', count: 7, value: 'Rs 22,840', width: '38%', color: '#b45309' },
-  { label: '30–60 days', count: 12, value: 'Rs 41,200', width: '60%', color: '#d97706' },
-  { label: '60–90 days', count: 19, value: 'Rs 76,500', width: '88%', color: '#600010' },
-]
+  {
+    label: "Expired",
+    count: 3,
+    value: "Rs 8,420",
+    width: "18%",
+    color: "#DC2626",
+  },
+  {
+    label: "Under 30 days",
+    count: 7,
+    value: "Rs 22,840",
+    width: "38%",
+    color: "#b45309",
+  },
+  {
+    label: "30–60 days",
+    count: 12,
+    value: "Rs 41,200",
+    width: "60%",
+    color: "#d97706",
+  },
+  {
+    label: "60–90 days",
+    count: 19,
+    value: "Rs 76,500",
+    width: "88%",
+    color: "#600010",
+  },
+];
 
 export default function Stock() {
-  const [ref, inView] = useInView()
+  const [ref, inView] = useInView();
   return (
     <section id="stock" className="section section-white" ref={ref}>
       <div className="wrap">
         <div className="grid gap-12 lg:grid-cols-[1.25fr_1.02fr] lg:items-center">
           {/* Screenshot / mock */}
-          <div className={`fade-rise ${inView ? 'in' : ''}`}>
+          <div className={`fade-rise ${inView ? "in" : ""}`}>
             {/* <div className="screen-frame-light" style={{ overflow: 'hidden' }}>
               <div className="browser-chrome-light">
                 <span className="chrome-dot" style={{ background: '#ff5f57' }} />
@@ -78,33 +96,95 @@ export default function Stock() {
                 </div>
               </div>
             </div> */}
-            <div className="rounded-2xl overflow-hidden shadow-2xl border border-[rgba(26,1,44,0.08)] bg-white">
-              <img src="/screenshots/expiry-dashboard.png" alt="Expiry risk dashboard" style={{ width: '100%', display: 'block' }} />
-            </div>
-
+            <video
+              src="/expiry.MOV"
+              autoPlay
+              loop
+              muted
+              className="rounded-2xl overflow-hidden shadow-2xl border border-[rgba(26,1,44,0.08)] bg-white"
+            />
           </div>
 
           {/* Text */}
-          <div className={`fade-rise ${inView ? 'in' : ''}`} style={{ animationDelay: '100ms' }}>
-            <h2 className="h2" style={{ color: '#1A012C' }}>
-              See every rupee<br />expiring in real time.
+          <div
+            className={`fade-rise ${inView ? "in" : ""}`}
+            style={{ animationDelay: "100ms" }}
+          >
+            <h2 className="h2" style={{ color: "#1A012C" }}>
+              See every rupee
+              <br />
+              expiring in real time.
             </h2>
             <p className="lede lede-light" style={{ marginTop: 18 }}>
-              Four expiry windows, suggested markdowns or supplier returns, and automatic DRAP
-              recall batch locks — no manual checking, no surprise losses.
+              Four expiry windows, suggested markdowns or supplier returns, and
+              automatic DRAP recall batch locks — no manual checking, no
+              surprise losses.
             </p>
-            <ul style={{ marginTop: 32, listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: 18 }}>
+            <ul
+              style={{
+                marginTop: 32,
+                listStyle: "none",
+                padding: 0,
+                display: "flex",
+                flexDirection: "column",
+                gap: 18,
+              }}
+            >
               {[
-                ['FEFO batch auto-selection', 'The nearest-expiry batch is always chosen at billing — automatically.'],
-                ['Reorder alerts from sales velocity', 'Stock-out predictions based on speed vs supplier lead time.'],
-                ['WhatsApp order to distributor', 'One tap sends a formatted order to your supplier.'],
-                ['Goods received note (GRN)', 'Match deliveries to purchase orders, catch short shipments.'],
+                [
+                  "FEFO batch auto-selection",
+                  "The nearest-expiry batch is always chosen at billing — automatically.",
+                ],
+                [
+                  "Reorder alerts from sales velocity",
+                  "Stock-out predictions based on speed vs supplier lead time.",
+                ],
+                [
+                  "WhatsApp order to distributor",
+                  "One tap sends a formatted order to your supplier.",
+                ],
+                [
+                  "Goods received note (GRN)",
+                  "Match deliveries to purchase orders, catch short shipments.",
+                ],
               ].map(([title, body]) => (
-                <li key={title} style={{ display: 'flex', gap: 14 }}>
-                  <span style={{ marginTop: 3, width: 22, height: 22, borderRadius: '50%', background: '#600010', color: '#fff', display: 'grid', placeItems: 'center', fontSize: 12, fontWeight: 900, flexShrink: 0 }}>✓</span>
+                <li key={title} style={{ display: "flex", gap: 14 }}>
+                  <span
+                    style={{
+                      marginTop: 3,
+                      width: 22,
+                      height: 22,
+                      borderRadius: "50%",
+                      background: "#600010",
+                      color: "#fff",
+                      display: "grid",
+                      placeItems: "center",
+                      fontSize: 12,
+                      fontWeight: 900,
+                      flexShrink: 0,
+                    }}
+                  >
+                    ✓
+                  </span>
                   <div>
-                    <div style={{ fontSize: '15px', fontWeight: 700, color: '#1A012C' }}>{title}</div>
-                    <div style={{ fontSize: '14px', color: '#7a6886', marginTop: 2 }}>{body}</div>
+                    <div
+                      style={{
+                        fontSize: "15px",
+                        fontWeight: 700,
+                        color: "#1A012C",
+                      }}
+                    >
+                      {title}
+                    </div>
+                    <div
+                      style={{
+                        fontSize: "14px",
+                        color: "#7a6886",
+                        marginTop: 2,
+                      }}
+                    >
+                      {body}
+                    </div>
                   </div>
                 </li>
               ))}
@@ -113,5 +193,5 @@ export default function Stock() {
         </div>
       </div>
     </section>
-  )
+  );
 }
